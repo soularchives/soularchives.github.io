@@ -3,9 +3,45 @@ html,body {
   width: 100%;
   padding: 0;
   margin: 0;
+  background-color: #1c1c1c;
+  color: #fff;
 }
+
+
+
+.back-heading {
+  text-align: center;
+}
+
+.back-heading span{
+  display: inline-block;
+  font-size: 300px;
+  font-weight: 700;
+  -webkit-text-stroke: 4px #fff;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: -1200px;
+}
+
 .heading {
-  font-size: 50px;
+  font-size: 70px;
   text-align: center;
   letter-spacing: -2px;
+  text-align: center;
+  margin-top: -100px;
+  margin-bottom: -70px;
+}
+
+.quote {
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
+
+.author {
+  position: relative;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  left: 300px;
+  bottom: 25px;
 }
