@@ -4,6 +4,7 @@ html,body {
   padding: 0;
   margin: 0;
   background-color: #1c1c1c;
+  overflow-x: hidden
 }
 
 @keyframes fadein1{
@@ -14,6 +15,11 @@ html,body {
 @keyframes fadein2{
   from {opacity: 0;}
   to {opacity: 1;}
+}
+
+@keyframes highlighteffect{
+  from {color: #bababa;}
+  to {color: #fff;}
 }
 
 
@@ -66,4 +72,31 @@ html,body {
   left: 300px;
   bottom: 25px;
   color: #fff;
+}
+
+.information {
+  text-align: center;
+}
+
+.information-heading {
+  font-size: 50px;
+  position: relative;
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  
+}
+
+.information-text {
+  font-size: 35px;
+  color: #bababa;
+  font-family: 'Playfair Display', serif;
+}
+
+.information-text span{
+  font-size: 35px;
+  animation-name: highlighteffect;
+  animation-duration: 1s;
+  animation-delay: 5s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
 }
