@@ -4,9 +4,17 @@ html,body {
   padding: 0;
   margin: 0;
   background-color: #1c1c1c;
-  color: #fff;
 }
 
+@keyframes fadein1{
+  from {-webkit-text-stroke: 4px transparent;}
+  to {-webkit-text-stroke: 4px #fff;}
+}
+
+@keyframes fadein2{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
 
 
 .back-heading {
@@ -17,9 +25,14 @@ html,body {
   display: inline-block;
   font-size: 300px;
   font-weight: 700;
-  -webkit-text-stroke: 4px #fff;
   -webkit-text-fill-color: transparent;
   margin-bottom: -1200px;
+  animation-name: fadein1;
+  animation-delay: 0.5s;
+  animation-duration: 6s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
 }
 
 .heading {
@@ -29,12 +42,20 @@ html,body {
   text-align: center;
   margin-top: -100px;
   margin-bottom: -70px;
+  opacity: 0;
+  color: #fff;
+  animation-name: fadein2;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
 }
 
 .quote {
   font-size: 20px;
   text-align: center;
   font-family: 'Playfair Display', serif;
+  color: #fff;
 }
 
 .author {
@@ -44,4 +65,5 @@ html,body {
   font-family: 'Playfair Display', serif;
   left: 300px;
   bottom: 25px;
+  color: #fff;
 }
